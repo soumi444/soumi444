@@ -1,0 +1,41 @@
+.column {
+  float: left;
+  width: 49%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 20px 0px 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+img {
+  border-radius: 10px 0 0 10px;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
